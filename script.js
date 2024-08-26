@@ -16,6 +16,16 @@ for (i=0; i < 16; i++) {
      }
 }
 
+function changeColor  () {
+    const squareEl = document.querySelectorAll(".square")
+    squareEl.forEach(squares => {
+        squares.addEventListener("mouseover",(e)=>{
+            e.target.style.backgroundColor = "black";
+        });
+    });
+}
+changeColor();
+
 
 
 
